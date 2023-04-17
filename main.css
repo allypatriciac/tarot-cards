@@ -1,5 +1,13 @@
+body{
+  background-color: dimgray;
+  background-image: url(assets/backcard.png);
+  background-repeat:repeat-y;
+  background-size: contain;
+}
+
 h1{
   text-align: center;
+  color: aliceblue;
 }
 
 .card-grid{
