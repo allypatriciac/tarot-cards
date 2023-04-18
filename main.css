@@ -1,6 +1,6 @@
 body{
   background-color: dimgray;
-  background-image: url(assets/backcard.png);
+  background-image: url(assets/backcard.svg);
   background-repeat:repeat-y;
   background-size: contain;
 }
@@ -13,7 +13,7 @@ h1{
 .card-grid{
     display:grid;
     margin:5px;
-    grid-gap:5px;
+    grid-gap:35px;
     grid-template-columns: 1fr,1fr;
     grid-template-rows: 1fr
     1fr
@@ -29,7 +29,7 @@ h1{
     "q r"
     "s t"
     "u v";
-    padding-bottom:10px;
+    padding-bottom:20px;
   }
 
 
