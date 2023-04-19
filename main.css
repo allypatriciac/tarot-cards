@@ -1,4 +1,8 @@
-body{
+@media screen and (max-width: 1200px) {
+  body{
+  transform-origin: top;
+  transform: scale(1);
+  margin:0 auto;
   background-color: dimgray;
   background-image: url(assets/backcard.svg);
   background-repeat:repeat-y;
@@ -12,8 +16,8 @@ h1{
 
 .card-grid{
     display:grid;
-    margin:5px;
-    grid-gap:35px;
+    margin:0 auto;
+    grid-gap:5%;
     grid-template-columns: 1fr,1fr;
     grid-template-rows: 1fr
     1fr
@@ -35,7 +39,8 @@ h1{
 
 .box-wrapper{
     height:350px;
-    border-radius: 1%;
+    border-radius: 5%;
+    padding-bottom: 5%;
     }
     .box1 {
       grid-area: a;
@@ -103,18 +108,108 @@ h1{
     .box22{
       grid-area: v;
     }
+}
 
-    @media only screen and (min-width: 1200px){
-      
-    .content {
+@media only screen and (min-width: 1200px){
+  body{
+    margin:0 auto;
+    background-color: dimgray;
+    background-image: url(assets/backcard.svg);
+    background-repeat:repeat-y;
+    background-size: cover;
+  }
+  
+  h1{
+    text-align: center;
+    color: aliceblue;
+  }
+
+  .card-grid{
         display:grid;
-        margin:10px;
-        grid-gap:50px;
-        grid-template-columns: 1fr,1fr,1fr;
-        grid-template-rows: 1fr
-        1fr
-        1fr;
-        grid-template-areas: "a b c"
-        "d e f";
+        margin: 0 auto;
+        grid-gap:50%;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr,
+        1fr,
+        1fr,;
+        grid-template-areas: 
+        "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p"
+        "q r s t"
+        "u v";
+    padding-bottom: 100%;
       }
+      .box-wrapper{
+        height:3000px;
+        border-radius: 5%;
+        padding-bottom: 5%;
     }
+    .box1 {
+      grid-area: a;
+    }
+    .box2 {
+      grid-area: b;
+    }
+    .box3 {
+      grid-area: c;
+    }
+    .box4 {
+      grid-area: d;
+    }
+    .box5 {
+      grid-area: e;
+    }
+    .box6 {
+      grid-area: f;
+    }
+    .box7{
+      grid-area: g;
+    }
+    .box8{
+      grid-area: h;
+    }
+    .box9{
+      grid-area: i;
+    }
+    .box10{
+      grid-area: j;
+    }
+    .box11{
+      grid-area: k;
+    }
+    .box12{
+      grid-area: l;
+    }
+    .box13{
+      grid-area: m;
+    }
+    .box14{
+      grid-area: n;
+    }
+    .box15{
+      grid-area: o;
+    }
+    .box16{
+      grid-area: p;
+    }
+    .box17{
+      grid-area: q;
+    }
+    .box18{
+      grid-area: r;
+    }
+    .box19{
+      grid-area: s;
+    }
+    .box20{
+      grid-area: t;
+    }
+    .box21{
+      grid-area: u;
+    }
+    .box22{
+      grid-area: v;
+    }
+  }
